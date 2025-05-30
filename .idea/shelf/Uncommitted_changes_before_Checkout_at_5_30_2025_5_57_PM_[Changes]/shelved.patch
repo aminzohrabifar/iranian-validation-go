@@ -1,0 +1,12 @@
+Index: go.mod
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>module github.com/aminzohrabifar/iranian-validation-go\r\n
+===================================================================
+diff --git a/go.mod b/go.mod
+--- a/go.mod	
++++ b/go.mod	
+@@ -1,1 +1,1 @@
+-module github.com/aminzohrabifar/iranian-validation-go
++module github.com/aminzohrabifar/iranian-validation-go
+\ No newline at end of file
