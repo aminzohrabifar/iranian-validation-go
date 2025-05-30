@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e88cdcae-d7ff-4727-9595-4def6cd092d9" name="Changes" comment="Init Commit">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/general/general.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobile/mobile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mobile/mobile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mobile/mobile.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +53,13 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "mobile__feature",
     "go.import.settings.migrated": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Amin/Documents/iranian-validation-go",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">

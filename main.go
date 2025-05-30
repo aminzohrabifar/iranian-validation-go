@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	err, op := mobile.GetMobileNumberOprator("  sww 916ddw 123dw 4567  ")
+	op, err := mobile.GetMobileNumberOprator("  sww 916ddw 123dw 4567  ")
 	if err != nil {
 		fmt.Println(err)
 	}

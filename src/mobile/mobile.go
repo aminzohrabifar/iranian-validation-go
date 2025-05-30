@@ -11,7 +11,7 @@ func IsMobileNumberValid(mobileNumber string) bool {
 		exist                    bool
 		normalizedNumber, prefix string
 	)
-	normalizedNumber = cleanMobileNumber(mobileNumber)
+	normalizedNumber = CleanMobileNumber(mobileNumber)
 	if len(normalizedNumber) != 10 || !strings.HasPrefix(normalizedNumber, "9") {
 		return false
 	}
@@ -19,40 +19,40 @@ func IsMobileNumberValid(mobileNumber string) bool {
 	_, exist = operatorPrefixes[prefix]
 	return exist
 }
-func GetMobileNumberOprator(mobileNumber string) (error, string) {
+func GetMobileNumberOprator(mobileNumber string) (string, error) {
 	var (
 		normalizedNumber, prefix string
 	)
 	if !IsMobileNumberValid(mobileNumber) {
-		return errors.New("This mobile number is not valid."), ""
+		return "", errors.New("This mobile number is not valid.")
 	}
-	normalizedNumber = cleanMobileNumber(mobileNumber)
+	normalizedNumber = CleanMobileNumber(mobileNumber)
 	prefix = normalizedNumber[0:3]
-	return nil, operatorPrefixes[prefix].OperatorName
+	return operatorPrefixes[prefix].OperatorName, nil
 }
-func GetMobileNumberPersianOprator(mobileNumber string) (error, string) {
+func GetMobileNumberPersianOprator(mobileNumber string) (string, error) {
 	var (
 		normalizedNumber, prefix string
 	)
 	if !IsMobileNumberValid(mobileNumber) {
-		return errors.New("This mobile number is not valid."), ""
+		return "", errors.New("This mobile number is not valid.")
 	}
-	normalizedNumber = cleanMobileNumber(mobileNumber)
+	normalizedNumber = CleanMobileNumber(mobileNumber)
 	prefix = normalizedNumber[0:3]
-	return nil, operatorPrefixes[prefix].PersianOperatorName
+	return operatorPrefixes[prefix].PersianOperatorName, nil
 }
-func GetMobileNumberOpratorID(mobileNumber string) (error, int) {
+func GetMobileNumberOpratorID(mobileNumber string) (int, error) {
 	var (
 		normalizedNumber, prefix string
 	)
 	if !IsMobileNumberValid(mobileNumber) {
-		return errors.New("This mobile number is not valid."), 0
+		return 0, errors.New("This mobile number is not valid.")
 	}
-	normalizedNumber = cleanMobileNumber(mobileNumber)
+	normalizedNumber = CleanMobileNumber(mobileNumber)
 	prefix = normalizedNumber[0:3]
-	return nil, operatorPrefixes[prefix].operatorID
+	return operatorPrefixes[prefix].operatorID, nil
 }
-func cleanMobileNumber(mobileNumber string) string {
+func CleanMobileNumber(mobileNumber string) string {
 	var (
 		cleanedMobileNumber string
 		nonDigitRegex       = regexp.MustCompile(`[^\d]+`)
