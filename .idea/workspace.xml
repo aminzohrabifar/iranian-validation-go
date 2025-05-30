@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e88cdcae-d7ff-4727-9595-4def6cd092d9" name="Changes" comment="Add README.md">
+    <list default="true" id="e88cdcae-d7ff-4727-9595-4def6cd092d9" name="Changes" comment="update go.mod version">
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +97,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add README.md" />
+    <MESSAGE value="update go.mod version" />
+    <option name="LAST_COMMIT_MESSAGE" value="update go.mod version" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
